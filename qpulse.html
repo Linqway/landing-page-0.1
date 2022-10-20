@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q Pulse</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Crete Round"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/linqway-browser.png" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Crete Round";
+      }
+      .qpulse-text {
+        position: absolute;
+        margin: 0;
+        /* top: 35%; */
+        left: 35%;
+        background: linear-gradient(
+          90deg,
+          #ff0000,
+          #ffff00,
+          #ff00f3,
+          #0033ff,
+          #ff00c4,
+          #ff0000
+        );
+        background-size: 400%;
+        font-size: 100px;
+        font-family: sans-serif;
+        letter-spacing: 10px;
+        font-weight: 600;
+        word-spacing: 5px;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: animate 10s linear infinite;
+      }
+      @keyframes animate {
+        0% {
+          background-position: 0%;
+        }
+        100% {
+          background-position: 400%;
+        }
+      }
+      .application {
+        font-size: 42px;
+        text-align: center;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          transform: translate3d(0, 40px, 0);
+        }
+
+        to {
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fadeInUp {
+        from {
+          transform: translate3d(0, 40px, 0);
+        }
+
+        to {
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+      }
+
+      .animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+      }
+
+      .animatedFadeInUp {
+        opacity: 0;
+      }
+
+      .fadeInUp {
+        opacity: 0;
+        animation-name: fadeInUp;
+        -webkit-animation-name: fadeInUp;
+        display: flex;
+        align-items: center;
+      }
+      .tested {
+        font-size: 42px;
+        margin: 10px 20px;
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* margin: 200px; */
+        padding: 100px 200px;
+        /* height: 1000px; */
+        margin-top: 168px;
+        background-image: url("waves.gif");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: #fff;
+      }
+      .fa-arrow-circle-left {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html">
+      <i
+        class="fa fa-arrow-circle-left"
+        style="font-size: 48px; color: gray"
+      ></i>
+    </a>
+    <h1 class="application">Application experience development</h1>
+    <h1 class="qpulse-text">QPulse</h1>
+
+    <div class="box">
+      <div class="animated animatedFadeInUp fadeInUp">
+        <i class="fa-solid fa-person fa-3x"></i>
+
+        <p class="tested">Tested with the application-targeted audience.</p>
+      </div>
+      <div class="animated animatedFadeInUp fadeInUp">
+        <i class="fa-solid fa-snowflake fa-2x"></i>
+        <p class="tested">Eliminate the undiscovered glitches.</p>
+      </div>
+      <div class="animated animatedFadeInUp fadeInUp">
+        <i class="fa-solid fa-thumbs-up fa-2x"></i>
+        <p class="tested">Optimize your application.</p>
+      </div>
+      <div class="animated animatedFadeInUp fadeInUp">
+        <i class="fa-solid fa-wand-magic-sparkles fa-2x"></i>
+        <p class="tested">Gather actual requirements.</p>
+      </div>
+      <div class="animated animatedFadeInUp fadeInUp">
+        <i class="fa-solid fa-laptop fa-2x"></i>
+        <p class="tested">Directly deploy your application.</p>
+      </div>
+    </div>
+  </body>
+</html>
